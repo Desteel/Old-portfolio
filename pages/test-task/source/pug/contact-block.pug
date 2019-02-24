@@ -1,0 +1,31 @@
+.b-contact-block.b-contact-block_adaptive.js-contact-block
+	.b-contact-block__container
+		//content
+		.b-contact-block__logo-box
+			img.b-logo(alt="Премьера" src="images/logo-img.png")
+		
+		.b-contact-block__text-box
+			.b-text.js-text-form-hidden
+				p Закажите обратный звонок,
+				p мы перезвоним Вам в ближайшее время!
+		
+		//form
+		.b-contact-block__form-box
+			form.b-form.js-form(name="contact-form" method="POST" action="#")
+				.b-form__text-box
+					input.b-form__input.b-form__input_text.b-form__input_adaptive.js-input-name(name="contact-name" type="text" placeholder="Ваше имя" maxlength="20")
+					
+				.b-form__num-box
+					input.b-form__input.b-form__input_num.b-form__input_adaptive.js-input-phone(name="contact-phone" type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _")
+		
+				//button
+				.b-form__button-box
+					button.b-button.b-button-style_form.b-button_adaptive.b-button_triangle.b-button_triangle_adaptive.b-uppercase.js-send-button
+						span.b-button__text.
+							Жду звонка
+		
+		//close button
+		.b-contact-block__close-button-box
+				.b-close-button.js-close-button
+					svg(width="46" height="46")
+						use(xlink:href="#i-close-svg")

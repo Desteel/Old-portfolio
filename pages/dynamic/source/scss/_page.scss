@@ -1,0 +1,20 @@
+.b-page { 
+	font: 12px $main-font_family;
+	line-height: 1.6;
+	color: $main-text_color;
+	background: $page-background_color url(../images/bg.png);
+}
+
+.b-page__wrapper {
+	max-width: 940px;
+	margin: 40px auto 0 auto;
+}
+
+.b-page__line{
+	height: 5px;
+	background: $line-background_color;
+	margin-top: 0;
+}
+.b-page__line_bottom {
+	height: 14px;
+}

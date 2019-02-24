@@ -1,0 +1,15 @@
+/* ic6 */
+.i-mans-svg__color {
+	@include animation-name(k-color_change);
+	@include animation-duration(2s);
+	fill:#F39600;
+}
+
+@include keyframes(k-color_change) {
+  0% {
+	fill:#FFFFFF;
+  }
+  100% {
+	fill:#F39600;
+  }
+}

@@ -1,0 +1,52 @@
+.slick-list {
+	margin-bottom: 2.31729055258467%;
+}
+
+/*dots */
+.b-slick-nav-dot {
+	/*position: absolute;
+	bottom: -14.5%;
+	display: block;*/
+	
+	li {
+		position: relative;
+        display: inline-block;		
+		width: 22px;
+		height: 4px;		
+		margin: 0px 1.7px;
+		cursor: pointer;
+		
+		button {
+			display: block;
+			outline: none;
+			border: none;
+			font-size: 0px;
+			line-height: 0;
+			color: transparent;
+			cursor: pointer;
+			padding: 0;
+			width: 22px;
+			height: 4px;
+			background-color: rgb(227, 227, 227);
+			background-size: 100%;
+			
+			&:hover, &:focus {
+                outline: none;
+            }
+			
+			&:before {
+				@include pseudo;
+				top: 0;
+				left: 0;
+				width: 22px;
+				height: 4px;
+				background-color: rgb(68, 68, 68);
+				opacity: 0;
+			}
+		}
+		
+		&.slick-active button:before {
+            opacity: 1;
+        }		
+	}
+}

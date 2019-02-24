@@ -1,0 +1,15 @@
+@import "compass/css3";
+@import "breakpoint";
+
+@import "_ic1.scss";
+@import "_ic2.scss";
+@import "_ic3.scss";
+@import "_ic4.scss";
+@import "_ic5.scss";
+@import "_ic6.scss";
+
+.b-container__box{
+	display: inline-block;
+	margin: 20px;
+}
+

@@ -1,0 +1,38 @@
+/* b-contact-block */
+.b-contact-block-wrap {
+	visibility: hidden;
+    opacity: 0;
+	
+	@include transition(all 0.2s);
+}
+
+.b-contact-block {
+	background: url(../images/background.png);
+	background-color: rgb(238,238,238);
+	width: 570px;	
+	
+	//position: absolute;
+}
+
+/* js visible */
+.b-block_visible {
+	visibility: visible;
+    opacity: 1;
+}
+
+
+.b-contact-block__container {	
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;	
+}
+
+/* content */
+.b-contact-block__logo-box {
+    margin-bottom: 35px;
+}
+
+.b-contact-block__text-box {
+    margin-bottom: 34px;
+}

@@ -1,0 +1,38 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(name="keywords" content="html, css, html5, css3, html верстка, html-верстка, верстка сайтов, адаптивная верстка, адаптив, frontend, фронтенд, портфолио")
+		meta(name="description" content="Портфолио html-верстальщика")
+		meta(name="author" content="Desteel")
+		
+		title Портфолио
+		meta(property="og:title" content="Портфолио")
+		meta(property="og:image" content="https://desteel.github.io/images/preview/preview.png")
+
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		link(href="css/main.css" rel="stylesheet")
+		
+		include js-head/js-head.pug
+		
+	body.b-page.b-page_flex
+		//SVG code
+		svg(width="0" height="0")
+			defs
+				symbol#i-close-svg
+					path(d="M64 0L0 64l448 448L2 958l64 64 446-446 446 446 64-64-446-446 448-448-64-64-448 448z")
+		//SVG code end
+		
+		.b-page__row.b-page__row_flex.b-page__line
+			.b-page__wrapper
+				include header.pug
+			//header end
+		.b-page__row
+			.b-page__wrapper.b-page__wrapper_adaptive
+				include content.pug
+			//content end
+		.b-page__row.b-page__row_flex.b-page__line_bottom
+			.b-page__wrapper.b-page__wrapper_footer
+				include footer.pug
+			//footer end

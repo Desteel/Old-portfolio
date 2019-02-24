@@ -1,0 +1,106 @@
+/* header */
+
+.b-header {
+	background-color: rgba(255,255,255,.7);
+	border: $main-border;
+	@include box-shadow(0 1px 4px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.4));
+	@include background-image(linear-gradient(to top, rgba(0,0,0,.08), rgba(255,255,255,.15)));		
+}
+
+.b-nav-menu__item {
+	display: inline-block;
+	width: 12.5%;
+	text-align: center;	
+	position: relative;
+}
+
+/* logo */
+.b-nav-menu__item:nth-child(1)> .b-nav-menu__button{
+	display: block;	
+		font: 31.65px/30px $advanced-font_family;
+		color: $logo-text_color;
+		border: none;
+		@include text-shadow(0 1px 1px rgba(0,0,0,.75));
+		
+		&:hover{
+			color: $logo-text_color;
+			background: none;
+			box-shadow: none;
+		}
+}
+
+.b-nav-menu__button {
+	font: 12px/42px $second-font_family;
+	color: $second-text;
+	display: block;	
+	@include text-shadow(0 1px #fff);
+	
+	border-left: 1px solid $slider-color;
+	@include box-shadow(-1px 0 0 0 rgb(220, 220, 220));
+}
+
+/* вложенный список */
+.c-nav-sub-menu-active:hover .b-sub-nav-menu_lvl-one {
+	opacity: 1;
+	visibility: visible;
+	@include transition-delay(0s);
+}
+
+.b-sub-nav-menu {	
+	position: absolute;
+	width: 98.933901919%; /* 116/117,25*100 */	
+	z-index: 2;	
+	
+	background-color: rgba(255,255,255,.75);
+	@include box-shadow(0 1px 4px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.4));
+}
+
+.b-sub-nav-menu_hidden {
+	opacity: 0;
+    visibility: hidden;	
+	@include transition (opacity 0.3s, visibility 0s linear 0.3s);
+}
+
+.b-sub-nav-menu__item {
+	position: relative;
+}
+
+.c-sub-nav-sub-menu-active:hover .b-sub-nav-menu_lvl-two {
+	opacity: 1;
+	visibility: visible;
+	@include transition-delay(0s);
+}
+
+.b-sub-nav-menu_lvl-two{
+	left: 100.933902%; /* 116/117,25*100 */
+	top: 0px;
+}
+
+.b-sub-nav-menu__link {
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: $main-text;
+	display: block;
+    padding: 9px 0;
+	
+	&:hover{
+		background-color: rgba(219, 219, 219, 0.302);
+	}
+}
+
+/* adaptive menu button */
+.b-nav-button-adaptive {	
+	display: none;
+	text-align: center;
+}
+
+.b-nav-button-adaptive_button {
+	font-size: 15px;
+}
+
+
+
+
+
+

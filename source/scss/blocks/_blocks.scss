@@ -1,0 +1,36 @@
+/* panels */
+.b-caption-holder {
+	padding: 15px 0;
+	text-align: center;
+}
+	
+.b-caption {
+	font-size: 18px;
+	color: $second-text_color;
+}
+
+
+/* buttons */
+.b-button-main__hover {
+	&:hover {
+		color: $selected-text_color;
+		background-color: rgba(219,219,219,.3);
+		@include box-shadow(inset 0 1px 3px rgba(0,0,0,.2));
+		@include background-image(linear-gradient(top, rgba(0,0,0,.11), rgba(255,255,255,.11)));
+	}
+}
+
+/* close button */
+.b-block-close {
+	position: absolute;
+	right: 10px;
+    top: 10px;
+	cursor: pointer;
+	@include transition(all .5s ease);
+	
+	fill: $line-background_color;
+	
+	&:hover {
+		fill: $dark-text_color;
+	}
+}

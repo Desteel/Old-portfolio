@@ -1,0 +1,84 @@
+/* header */
+.b-header__inner_title {
+	float: left;	
+}
+
+.b-header-title {
+	font-size: 30px;
+}
+
+.b-header__inner_information {
+	float: right;
+	margin-top: 20px;
+}
+
+.b-info__item {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.b-info-link {	
+	color: $main-text_color;
+	@include transition(all 0.5s);
+	position: relative;
+	
+	&:hover {
+		color: $dark-text_color;
+	}
+}
+
+.b-info-link_size {
+	font-size: 16px;
+}
+
+/* sub menu */
+.b-sub-info-inner {
+	width: 156px;
+	background: rgb(229,229,229);
+	border: 2px solid $line-background_color;
+	@include border-radius(5px);
+}
+
+.b-sub-info-inner_position {
+	position: absolute;
+	z-index: 1;
+	
+	//right: -115%;	
+}
+
+.b-sub-info-inner_hidden {
+	visibility: hidden;
+	opacity: 0;
+	
+	@include transition (all .4s ease);
+}
+
+.b-sub-info-inner_visible {
+	visibility: visible;
+    opacity: 1;
+}
+
+.b-sub-info-inner__item {
+	overflow: hidden; //горизонталь
+}
+
+.b-info-link_form {
+	text-align: center;
+	display: block;
+	width: 316px;
+	
+	//height: 25px;    	вертикаль
+	//overflow: hidden;	вертикаль	
+}
+
+.b-info-link__hover {
+	@include transition (all .4s ease);
+	text-align: center;
+	
+    display: inline-block;	//горизонталь
+    width: 156px;			//горизонталь
+}
+
+.b-sub-info-inner__item:hover .b-info-link__hover:first-child {
+		margin-left: -316px;
+}

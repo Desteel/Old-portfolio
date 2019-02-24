@@ -1,0 +1,12 @@
+.b-nav__inner.b-flex-section.b-flex-between
+	.b-nav__logo
+		.b-logo
+			a.b-logo__link(href="#")
+				img.b-logo__img(alt="Marvel" src="images/b-nav/nav-logo.png")
+	.b-nav__menu
+		ul.b-menu
+			//-----
+			each val in ['Home', 'Service', 'About', 'Portfolio', 'Page', 'Blog', 'Contact']
+				//----
+				li.b-menu__item
+					a.b-menu__link.b-uppercase(href="#")= val

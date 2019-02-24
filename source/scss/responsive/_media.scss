@@ -1,0 +1,52 @@
+/* adaptive */
+
+$general-rules: max-width 940px; 
+$second-rules: max-width 830px; 
+$third-rules:  max-width 704px;    
+$fourth-rules: max-width 580px;	
+$fifth-rules: max-width 570px;		
+$sixth-rules: max-width 520px;		
+$seventh-rules: max-width 500px;	
+$eight-rules: max-width 390px;	
+$ninth-rules: max-width 360px;	
+
+//page
+.b-page__wrapper_adaptive {
+	margin-top: 20px;
+}
+
+//header
+.b-header_adaptive {	
+	@include breakpoint($general-rules) {
+		padding: 0 10px;
+	}
+	@include breakpoint($eight-rules) {
+		text-align: center;
+	}
+}
+
+.b-header__inner_adaptive {
+	@include breakpoint($eight-rules) {
+		float: none;
+		margin-bottom: 10px;
+	}
+}
+
+.b-info_adaptive {
+	@include breakpoint($eight-rules) {
+		margin: 0;
+	}
+}
+
+//content
+.b-images-wrap_adaptive {
+	@include breakpoint($general-rules) {
+		text-align: center;
+	}
+}
+
+.b-menu__separator {
+	@include breakpoint($ninth-rules) {
+		display: none
+	}
+}

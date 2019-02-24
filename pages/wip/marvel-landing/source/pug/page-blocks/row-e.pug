@@ -1,0 +1,56 @@
+.b-row-e__inner
+	.b-row-e__nav-panel
+		.b-row-e__title-box
+			h2.b-title.b-uppercase.
+				Our Protfolio
+			h3.b-sub-title.b-uppercase.b-sub-title_b-row-e.
+				Work
+				
+		.b-row-e__button-box
+			a.b-button.b-button_bg_hover.b-button_row-e.ion-a-apps.js-mix-filter(data-filter="all")(href="#")
+				span.b-button_icon.
+					All
+			a.b-button.b-button_bg_hover.b-button_row-e.js-mix-filter(data-filter=".js-mix-category-1")(href="#").
+				Business
+			a.b-button.b-button_bg_hover.b-button_row-e.js-mix-filter(data-filter=".js-mix-category-2")(href="#").
+				Corporate
+			a.b-button.b-button_bg_hover.b-button_row-e.js-mix-filter(data-filter=".js-mix-category-3")(href="#").
+				Branding
+			a.b-button.b-button_bg_hover.b-button_row-e.js-mix-filter(data-filter=".js-mix-category-4")(href="#").
+				Photography
+				
+	.b-row-e__filter-section
+		.b-filter.js-content-filter
+			
+			mixin filter_block(catName, imageName)
+				div(class="b-filter__inner js-mix-target js-mix-category-"+catName+"")
+					img.b-filter__img(alt="Изображение" src="images/b-row-e/photo-"+imageName+".png")
+					
+					.b-filter__info-panel-box.b-filter__info-panel-box_hidden
+						.b-info-panel
+							.b-info-panel__title-box.b-uppercase
+								.b-info-panel__title.
+									Fullwidth Slideshow
+								.b-info-panel__title.b-info-panel__sub-title.
+									 - Fashion								 
+							.b-info-panel__link-box
+								a.b-info-panel__link(href='#')
+									span.b-button_icon.
+										Link
+								a.b-info-panel__link.b-info-panel__link_position(href='#')
+									span.b-button_icon.
+										View
+
+			+filter_block(1, 1)
+			+filter_block(3, 2)
+			+filter_block(1, 3)
+			+filter_block(4, 4)
+			
+			+filter_block(4, 5)
+			+filter_block(2, 6)
+			+filter_block(2, 7)
+			+filter_block(1, 8)
+
+			
+			
+	

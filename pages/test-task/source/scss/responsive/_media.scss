@@ -1,0 +1,39 @@
+/* adaptive */
+
+$first-rules: max-width 570px; 
+$second-rules: max-width 379px; 
+$third-rules: max-width 235px; 
+
+
+/* contact block */
+.b-contact-block_adaptive {
+	@include breakpoint($first-rules) {
+		width: 100%;
+	}
+}
+
+/* form */
+.b-form__input_adaptive {
+	@include breakpoint($second-rules) {
+		width: 90%;
+	}
+}
+
+/* buttons */
+.b-button_adaptive {
+	@include breakpoint($third-rules) {		
+		width: 90%;
+		
+		&:hover{
+			background-color: rgb(255,186,0);
+		}
+	}
+}
+
+.b-button_triangle_adaptive {
+	@include breakpoint($third-rules) {		
+		&:before{
+			display: none;
+		}
+	}
+}

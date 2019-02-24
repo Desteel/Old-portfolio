@@ -1,0 +1,67 @@
+/* ic4 */
+.i-pages-svg__list1 { 
+	@include animation-name(key-matrix);
+	@include animation-duration(1.5s);
+	@include transform-origin(50% 50%);
+	
+	
+}
+
+.i-pages-svg__list2 { 
+	@include animation-name(key-matrix_top);
+	@include animation-duration(1.5s);
+	@include transform-origin(top left);
+	
+	
+}
+
+.i-pages-svg__list3 { 
+	@include animation-name(rotate3d);	
+	@include animation-duration(1.5s);
+	@include transform-origin(50% 50%);	
+}
+
+.i-svg__mark {
+	@include animation-name(key-matrix_rotate);
+	@include animation-duration(1.5s);
+	@include transform-origin(50% 50%);
+}
+
+@include keyframes(key-matrix) {
+  0% {
+	@include transform(matrix(1, -0.07, -0.4, 1, -1, -30));
+  }
+  100% {
+	@include transform(none);
+  }
+}
+
+@include keyframes(key-matrix_top) {
+  0% {
+	@include transform(matrix(1, 0, 0.4, 1, -1, -20));
+  }
+  100% {
+	@include transform(none);
+  }
+}
+
+@include keyframes(key-matrix_rotate) {
+  0% {
+	@include transform(matrix(2, 0, 0, 2, 0, 0));
+	opacity: 0;
+  }
+  100% {
+	@include transform(none);
+	opacity: 1;
+  }
+}
+
+@include keyframes(rotate3d) {
+  0% {
+	@include transform(rotate3d(0, 1, 0.7, -50deg));
+
+  }
+  100% {
+	@include transform(none);
+  }
+}

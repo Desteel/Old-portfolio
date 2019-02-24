@@ -1,0 +1,115 @@
+/* adaptive */
+
+$general-rules: max-width 940px; 
+$second-rules: max-width 830px; 
+$third-rules:  max-width 704px;    //580
+$fourth-rules: max-width 580px;	//500
+$fifth-rules: max-width 570px;		//704
+$sixth-rules: max-width 520px;		
+$seventh-rules: max-width 500px;	//570
+
+//index
+.b-page__wrapper_adaptive {
+	@include breakpoint($fourth-rules) {
+		margin: 20px auto 0 auto;
+	}
+}
+
+//header
+.b-nav-button-adaptive {	
+	@include breakpoint($third-rules) {
+		display: block;
+	}
+}
+
+.b-nav-menu_adaptive {
+	@include breakpoint($second-rules) {
+		position: relative;
+		text-align: center;
+	}	
+	
+	@include breakpoint($third-rules) {
+		display: none;
+	}
+}
+
+.b-nav-menu__item_adaptive:nth-child(1) {
+	@include breakpoint($second-rules) {
+		position: absolute;
+		width: 118px;
+		top: -95%;
+		left: 0;
+	}
+	@include breakpoint($third-rules) {
+		display: none;
+	}
+}
+
+.b-nav-menu__item_adaptive {    
+	@include breakpoint($third-rules) {
+		display: block;		
+		width: auto;
+		text-align: left; 
+	}
+}
+
+.b-nav-menu__button_adaptive {
+	@include breakpoint($second-rules) {
+		border-right: 1px solid $slider-color;
+		@include box-shadow(-1px 0 0 0 rgb(220, 220, 220), 1px 0 0 0 rgb(220, 220, 220));
+	}
+	
+	@include breakpoint($third-rules) {
+		font-size: 13px;
+		line-height: 30px;
+		padding-left: 20px;
+		background: $slider-color;
+		border: 1px solid $slider-color;
+		@include box-shadow(0 -1px 0 0 rgb(220, 220, 220));
+	}
+}
+
+.b-sub-nav-menu_adaptive {
+	@include breakpoint($third-rules) {
+		display: none;
+	}
+}
+
+//slider 
+.b-slider__inner {
+	@include breakpoint($general-rules) {
+		&:before{
+			display: none;
+		}
+	}
+}
+
+//content
+.b-content_adaptive {
+	@include breakpoint($general-rules) {
+		text-align: center;
+	}
+}
+
+.b-images-inner_adaptive {
+	@include breakpoint($third-rules) {
+		width: 30%;
+	}
+}
+
+//footer
+.b-footer_adaptive {
+	@include breakpoint($general-rules) {
+		padding: 0 20px;
+	}
+	
+	@include breakpoint($fourth-rules) {
+		display: block;
+	}
+}
+
+.b-social-box_adaptive {
+	@include breakpoint($fourth-rules) {
+		margin: 20px 8px 0 0;
+	}
+}

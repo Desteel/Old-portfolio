@@ -1,0 +1,20 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		
+		title Тестовое задание
+		
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		link(href="css/main.css" rel="stylesheet")
+		
+		include js-head/js-scripts-head.pug
+		
+	body.b-page
+		include svg.pug
+	
+		include panel.pug
+			
+		.b-contact-block-wrap.b-flex-center.js-block-visible
+			include contact-block.pug

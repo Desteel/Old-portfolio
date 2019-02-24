@@ -1,0 +1,26 @@
+/* ic1 */
+.i-hand-svg {
+	@include animation-name(key-bounce);
+	@include animation-duration(1s);
+	@include animation-fill-mode(both);
+}
+
+
+ @include keyframes(key-bounce) {
+	0%, 20%, 40%, 80% {
+		@include transition-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
+	}
+	0% {
+		@include transform(scale3d(.5, .5, .5));
+	}
+	20% {
+		@include transform(scale3d(1, 1, 1));
+	}
+	40% {
+		@include transform(scale3d(1, 1, 1));
+	}
+	80% {
+		@include transform(scale3d(.97, .97, .97));
+	}
+	
+} 

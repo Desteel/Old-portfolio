@@ -1,0 +1,53 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		
+		title dynamic
+		
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		link(href="js/slick/slick.css" rel="stylesheet")
+		link(href="js/slick/slick-theme.css" rel="stylesheet")
+		
+		link(href="css/main.css" rel="stylesheet")
+		
+		script(defer src="js/jquery-3.2.1.min.js")
+		
+		script(defer src="js/nav-nenu.js")
+		
+		script(defer src="js/mixitup/mixitup.min.js")
+		script(defer src="js/mixitup-setting.js")
+		
+		script(defer src="js/slick/slick.js")
+		script(defer src="js/slick-setting.js")
+		
+	body.b-page
+		.b-page__wrapper.b-page__line
+		
+		.b-page__wrapper
+			include header.pug
+		//header end
+			
+		.b-page__wrapper.b-page__wrapper_adaptive
+			include slider.pug
+		//slider end
+			
+		.b-page__wrapper.b-page__wrapper_adaptive
+			include content.pug
+		//content end
+			
+		.b-page__wrapper.b-page__wrapper_adaptive
+			include sidebar.pug
+		//aside end
+						
+		.b-page__wrapper.b-page__wrapper_adaptive
+			include footer.pug
+		//footer end
+			
+		.b-page__wrapper.b-page__line.b-page__line_bottom
+									
+									
+									
+									
+									

@@ -1,0 +1,50 @@
+/* panels */
+.b-holder-trans {
+	@include block-background;
+}
+
+.b-caption-holder {
+	margin: 15px 0;
+	text-align: center;
+}
+	
+.b-caption {
+	font: 14px $second-font_family;
+	color: $second-text_color;
+}
+
+.b-section-inner {
+	margin: 0 1.1% 1.1%; /* 10px */
+}
+
+/* buttons */
+.b-button-main {
+	display: block;	
+	@include border-radius(3px);
+	background-color: #fff;
+	@include box-shadow(0 1px 2px rgba(0,0,0,.2), inset 0 2px rgba(255,255,255,.6));
+	border: solid 1px #dcdcdc;
+	@include background-image(linear-gradient(bottom, #e7e7e7, #f7f7f7));
+}
+
+.b-button-main__hover {
+	&:hover {
+		color: $selected-text_color;
+		background-color: rgba(219,219,219,.3);
+		@include box-shadow(inset 0 1px 3px rgba(0,0,0,.2));
+		@include background-image(linear-gradient(top, rgba(0,0,0,.11), rgba(255,255,255,.11)));
+	}
+}
+
+/* shadow */
+.b-shadow{
+	position: relative;
+	
+	&:after{
+		@include pseudo;		
+		width: 99.3617021277%; /* 934/940*100 */
+		height: 5.3125%; /* 17/320*100 */
+		background: url(../images/shadow.png);
+		background-size: 100% 100%;
+	}
+}

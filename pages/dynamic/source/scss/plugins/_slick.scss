@@ -1,0 +1,102 @@
+/* arrows */
+.b-slick-nav  {
+	position: absolute;
+	width: 17px;
+	height: 25px;
+	display: inline-block;
+	background: url(../images/sprites.png) no-repeat;
+	z-index: 1;
+	cursor: pointer;	
+}
+
+.b-slick-nav_left-arrow {
+	background-position: -17px -13px ;
+}
+
+.b-slick-nav_right-arrow {
+	background-position: -69px -13px;
+}
+
+/* arrows_slider */
+.b-slick-nav_slider {
+	top: 46%;
+}
+
+.b-slick-nav_slider-left-arrow {
+	left: -6%;
+}
+
+.b-slick-nav_slider-right-arrow {
+	right: -6%;
+}
+
+/* arrows_news */
+.b-slick-nav_news {
+	top: 39%;
+}
+
+.b-slick-nav_news-left-arrow {
+	left: -9%;
+}
+
+.b-slick-nav_news-right-arrow {
+	right: -9%;
+}
+
+
+/*dots */
+.b-slick-nav-dot {
+	position: absolute;
+	bottom: 3.5%;
+	z-index: 2;
+	display: block;
+	width: 100%;
+	text-align: center;
+	
+	li {
+		position: relative;
+        display: inline-block;		
+		width: 9px;
+		height: 9px;		
+		margin: 0px 2.7px;
+		cursor: pointer;
+		
+		button {
+			display: block;			
+			outline: none;
+			font-size: 0px;
+			line-height: 0;
+            color: transparent;
+			cursor: pointer;
+			padding: 0;
+			
+			width: 9px;
+			height: 9px;
+			background-color: #fff;
+			@include box-shadow(0 2px 4px rgba(0,0,0,.32), inset 0 1px rgba(255,255,255,.75));
+			border: $main-border;
+			@include background-image(linear-gradient(bottom, rgba(0,0,0,.07), rgba(255,255,255,.07)));
+			
+			&:hover, &:focus {
+                outline: none;
+            }
+			
+			&:before {
+				@include pseudo;
+				top: 0;
+				left: 0;
+				width: 7px;
+				height: 7px;
+				background-color: #42a0a6;
+				@include box-shadow(inset 0 1px rgba(255,255,255,.26));
+				border: solid 1px #fff;
+				@include background-image(linear-gradient(bottom, rgba(0,0,0,.2), rgba(255,255,255,.2)));
+				opacity: 0;
+			}
+		}
+		
+		&.slick-active button:before {
+            opacity: 1;
+        }		
+	}
+}

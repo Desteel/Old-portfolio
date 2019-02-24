@@ -1,0 +1,66 @@
+/*  ROW B  */
+.b-row-b {
+	background: url(../images/b-row-b/background.png) no-repeat;
+    background-size: 100%;
+    background-position: top 0 left 0;
+	background-color: rgb(250, 250, 250);
+	border-top: 1px solid rgb(214, 214, 214);
+}
+
+.b-row-b__inner {
+	padding-top: 18.2%;
+	padding-bottom: 10%;
+} 
+
+/* title box */
+.b-row-b__title-box {
+    margin-bottom: 4%;
+	position: relative;
+}
+
+.b-title_row-b {
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.b-sub-title_row-b {
+	font-size: 72px;
+	
+	bottom: -13px;
+}
+
+
+/* text box */
+.b-row-b__text-box {
+	margin-bottom: 4.3%;
+}
+
+
+/* list box */
+.b-row-b__list-box {
+    padding-bottom: 3%;
+}
+
+.b-list {
+    padding-left: 28px;
+	line-height: 2;
+}
+
+.b-list__item {
+	position: relative;
+	
+	&:before{
+		@include pseudo($content: '\2605');
+		font-size: 24px;
+		
+		bottom: -7px;
+		left: -32px;
+	}
+}
+
+
+/* button box */
+.b-button_row-b {
+    font-size: 13px;
+    padding: 13px 27px;
+}

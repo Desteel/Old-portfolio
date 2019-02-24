@@ -1,0 +1,20 @@
+.b-header
+	nav.b-header__nav-menu
+		//adaptive menu button
+		.b-nav-button-adaptive
+			a.b-nav-menu__button.b-nav-button-adaptive_button.js-toggle-menu(href='#') Menu
+		//-----
+		mixin list(data)
+			ul(class!=attributes.class_ul)
+				each item in data.items
+					li(class!=attributes.class_li)
+						a(href='#' class!=attributes.class_a)= item.title
+						if item.sublevel_one
+							+list(item)(class_ul="b-sub-nav-menu b-sub-nav-menu_lvl-one b-sub-nav-menu_hidden b-sub-nav-menu_adaptive" class_li="b-sub-nav-menu__item c-sub-nav-sub-menu-active" class_a="b-sub-nav-menu__link")
+						if item.sublevel_two
+							+list(item)(class_ul="b-sub-nav-menu b-sub-nav-menu_lvl-two b-sub-nav-menu_hidden b-sub-nav-menu_adaptive" class_li="b-sub-nav-menu__item" class_a="b-sub-nav-menu__link")
+
+		- var data = {"title": "", "items": [{"title": "dynamic"}, {"title": "About"}, {"title": "Services", "sublevel_one": true, "items": [{"title": "Web design"}, {"title": "Graphic design"}, {"title": "Programming"}, {"title": "Animation", "sublevel_two": true, "items": [{"title": "2D animation"}, {"title": "3D animation"}, {"title": "Flash animation"}, {"title": "Stop motion"}, {"title": "Degital"} ] }, {"title": "3D graphics"}, {"title": "Illustration"} ] }, {"title": "Clients"}, {"title": "Portfolio"}, {"title": "Blog"}, {"title": "Careers"}, {"title": "Contact"} ] }
+		//-----
+			
+		+list(data)(class_ul="b-nav-menu b-nav-menu_adaptive js-toggle-menu_panel" class_li="b-nav-menu__item b-nav-menu__item_adaptive c-nav-sub-menu-active" class_a="b-nav-menu__button b-button-main__hover b-nav-menu__button_adaptive")

@@ -1,0 +1,20 @@
+.b-header__inner
+	.b-slider.b-slider_header.js-slick-slider
+
+		//------
+		mixin slider(title, text, button_text)
+			.b-slider__container
+				.b-slider__title-box.b-uppercase
+					h1.b-slider__title.b-uppercase.js-responsive-headline_header!= title
+
+				.b-slider__text-box
+					.b-slider__text!= text
+
+				.b-slider__button-box
+					a.b-button.b-button_hover.b-uppercase(href="#" target="_blank")!= button_text
+		//--------
+		+slider('Creative<br> and professional', '<p>Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end</p> <p>product which end users are not charged for.', 'Contact Us')
+		
+		+slider('Creative<br> and professional 2', '<p>Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end</p> <p>product which end users are not charged for.</p>', 'Contact Us')
+		
+		+slider('Creative<br> and professional 3', '<p>Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end</p> <p>product which end users are not charged for.</p>', 'Contact Us')

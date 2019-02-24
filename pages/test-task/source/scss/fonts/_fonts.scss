@@ -1,0 +1,8 @@
+//font
+@include font-face("pt-sans", font-files(
+	"pt-sans.ttf"
+));
+
+@include font-face("pt-sans-bold", font-files(
+	"pt-sans-bold.ttf"
+));

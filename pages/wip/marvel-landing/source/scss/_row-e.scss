@@ -1,0 +1,157 @@
+/*  ROW E  */
+.b-row-e__inner{
+	text-align: center;
+}
+
+
+.b-row-e__nav-panel{
+	background-color: rgb(255, 228, 0);
+	
+	padding-top: 7.8%;
+	padding-bottom: 2.8%;
+}
+
+/* title box */
+.b-row-e__title-box {
+	position: relative;	
+	margin-bottom: 3%;
+}
+
+.b-sub-title_b-row-e {
+	color: rgb(232, 209, 0);
+}
+
+
+/* button box */
+.b-button_row-e {
+	border: 1px solid rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	font-size: 13px;
+	padding: 6px 18px;
+    margin: 5px;
+	
+	position: relative;
+	
+	&:hover{
+		color: $page-background_color;
+	}	
+}
+
+.b-button_icon {
+	color: transparent;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+.b-button_row-e_active {
+	color: $page-background_color;
+	background-color: rgb(0, 0, 0);
+}
+
+
+
+/* filter */
+.b-row-e__filter-section {
+	background-color: rgb(71, 71, 71);
+}
+
+.b-filter__inner {
+    position: relative;
+	display: inline-block;
+	max-width: 475px;
+	display: none;
+	
+	&:hover .b-filter__info-panel-box_hidden{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.b-filter__info-panel-box {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+}
+
+/* show info-panel */
+.b-filter__info-panel-box_hidden {
+	visibility: hidden;
+    opacity: 0;
+	@include transition(all 0.3s);
+}
+
+.b-filter__inner {
+    &:hover .b-filter__info-panel-box_hidden{
+		visibility: visible;
+		opacity: 1;		
+	}
+}
+
+/* show end */
+
+.b-info-panel {	
+	background-color: rgba(255, 255, 255, 0.851);
+	position: relative;
+	padding: 21px 0;
+}
+
+.b-info-panel__title-box {
+    margin-left: 32px;    
+}
+
+.b-info-panel__title {
+    display: inline-block;
+	font: 15px $title-font-family;
+	letter-spacing: 1.3px;
+}
+
+.b-info-panel__sub-title{
+	font: 9px $main-font-family;
+	padding-left: 4px;
+}
+
+.b-info-panel__link-box {
+    position: absolute;
+    bottom: 64px;
+	right: 13px;
+	
+    height: 22px;
+	padding: 11px 10px 0 10px;
+	border-radius: 20px 20px 0 0;
+    background: inherit;    
+}
+
+.b-info-panel__link {
+    display: inline-block;
+    border-radius: 50%;
+	background: rgb(255,255,255);
+    border: 1px solid rgb(0, 0, 0);
+    width: 32px;
+    height: 32px;
+	
+	@include transition(all 0.2s);
+	
+	&:hover {
+		background: rgb(255,228,0);
+		border-color: rgb(255,228,0);
+	}
+}
+
+.b-info-panel__link_position {
+    margin-left: 10px;
+}
+
+
+
+
+
+/* ionicons */
+.ion-a-apps:before {
+	position: absolute;
+    font-size: 21px;
+	
+	left: 0;
+    right: 0;
+}

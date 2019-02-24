@@ -1,0 +1,152 @@
+/*  ROW D  */
+.b-row-d__inner {
+    padding-top: 15.7%;
+	padding-bottom: 9%;
+}
+
+/* title box */
+.b-row-d__title-box {
+	position: relative;
+	text-align: center;
+	margin-bottom: 11.5%;
+}
+
+
+/* list box */
+.b-col-list__item {    
+	padding-right: 10px;
+	margin-bottom: 67px;
+}
+
+.b-col-list__item_flex {
+	flex: 1 1 360px;
+}
+	
+.b-col-list__item_icon{
+	position: relative;
+	padding-left: 88px;
+	
+	&:before{
+		@include pseudo;
+
+		z-index: 1;		
+		font-size: 31px;
+		color: $page-background_color;
+		top: 20px;
+	}
+	
+	&:after{
+		@include pseudo;		
+		
+		width: 66px;
+		height: 66px;
+		border-radius: 50%;
+		left: 0;
+		top: 4px;
+	}	
+}
+
+
+.b-col-list__subject-box {
+    margin-bottom: 23px;
+}
+
+
+/* ionicons */
+.ion-a-lock{
+	&:before{
+		content: "\f392";		
+		left: 24px;
+	}
+	
+	&:after{
+		background-color: rgb(115, 200, 183);
+	}
+}
+
+.ion-ios-lightbulb{
+	&:before {
+		content: "\f452";		
+		left: 24px;
+	}
+	
+	&:after{
+		background-color: rgb(49,170,226);
+	}
+}
+
+.ion-ios-gear-outline{
+	&:before {
+		content: "\f43c";	
+		left: 22px;
+	}
+	
+	&:after{
+		background-color: rgb(193,131,214);
+	}
+}
+.ion-a-microphone{
+	&:before {
+		content: "\f2ec";	
+		left: 24px;
+    }
+	
+	&:after{
+		background-color: rgb(235,118,140);
+	}
+}
+
+.ion-ios-glasses{
+	&:before {
+		content: "\f43f";	
+		left: 20px;
+	}
+	
+	&:after{
+		background-color: rgb(115,200,183);
+	}
+}
+
+.ion-ios-paperplane{
+	&:before {
+		content: "\f474";	
+		left: 23px;
+	}
+	
+	&:after{
+		background-color: rgb(49,170,226);
+	}
+}
+
+.ion-a-laptop{
+	&:before {
+		content: "\f390";	
+		left: 18px;
+	}
+	
+	&:after{
+		background-color: rgb(235,209,117);
+	}
+}
+
+.ion-ios-bell-outline{
+	&:before {
+		content: "\f3e1";	
+		left: 22px;
+	}
+	
+	&:after{
+		background-color: rgb(113,138,199);
+	}
+}
+
+.ion-ios-camera-outline{
+	&:before {
+		content: "\f3f5";	
+		left: 22px;
+	}
+	
+	&:after{
+		background-color: rgb(75,227,164);
+	}
+}

@@ -1,0 +1,21 @@
+footer.b-footer.b-footer_adaptive
+	.b-footer__content.b-footer__content_adaptive
+		p.b-footer__text. 
+			All rights reserved 2012 visit our website: #[a.footer_text-link(href="#" target="_blank") www.blugraphic.com] follow us at #[a.footer_text-link(href="#" target="_blank") twitter]
+			
+		.b-footer__menu
+			ul.b-footer-menu
+				//-------
+				- var nav_button = ["About", ".", "Portfolio", ".", "Services", ".", "Clients", ".", "Blog", ".", "Careers", ".", "Contact"];
+				for name_button in nav_button
+					//-------
+					li.b-footer-menu__item
+						a.b-footer-menu__link(href='#')= name_button
+						
+	.b-footer__social
+		.b-social-box.b-social-box_adaptive
+			a(href="#").b-social-button.b-button-main.b-button-main__hover.b-social-icon_rss
+		.b-social-box.b-social-box_adaptive
+			a(href="#").b-social-button.b-button-main.b-button-main__hover.b-social-icon_tw
+		.b-social-box.b-social-box_adaptive
+			a(href="#").b-social-button.b-button-main.b-button-main__hover.b-social-icon_fb

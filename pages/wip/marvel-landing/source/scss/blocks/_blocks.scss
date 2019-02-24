@@ -1,0 +1,104 @@
+/* BLOCKS */
+
+/* text transform */
+.b-uppercase {
+	text-transform: uppercase;
+}
+
+/* flex */
+.b-flex-section {
+	@include display-flex;
+	@include flex-flow(wrap);
+}
+
+.b-flex-start {
+	@include justify-content(flex-start);
+}
+
+.b-flex-between {
+	@include justify-content(space-between);
+}
+
+.b-flex-center {
+	@include justify-content(center);	
+}
+
+.b-flex-end {
+	@include justify-content(flex-end);
+}
+
+/* buttons */
+.b-button {
+	display: inline-block;
+	border: 1px solid $main-text;	
+	color: inherit;
+	font-size: 16px;
+	text-align: center;
+	
+	padding: 13px 37px;	
+}
+
+.b-button_hover {
+	@include transition(all 0.3s);
+	
+	&:hover{
+		background-color: rgb(255, 228, 0);
+		border-color: rgb(255, 228, 0);
+		color: rgb(0, 0, 0);
+	}
+}
+
+.b-button_bg {
+	background-color: rgb(255, 228, 0);
+	border: none;
+}
+
+.b-button_bg_hover {
+	@include transition(all 0.3s);
+	
+	&:hover{
+		background-color: rgb(0, 0, 0);
+		color: rgb(255, 228, 0);
+	}
+}
+
+.b-button_flex {
+	@include flex(0 1 218px);
+}
+
+/* titles */
+.b-title {	
+	font: 30px $title-font-family;
+	line-height: 1;
+	position: relative;
+	z-index: 1;
+}
+
+.b-sub-title {
+	position: absolute;
+	font: 91px $sub-title-font-family;
+	line-height: 1.2;
+	color: rgb(232, 232, 232);
+	z-index: 0;
+	
+	bottom: -18px;
+	left: 0;
+	right: 0;
+}
+
+.b-subject {
+	font: 18px $title-font-family;
+}
+
+
+/* text */
+.b-text {
+	font: 16px $text-font-family;
+	line-height: 1.5;
+}
+
+
+/* icons ionicons */
+.b-icon {	
+	line-height: 0;
+}

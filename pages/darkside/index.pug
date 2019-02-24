@@ -1,0 +1,151 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title The Darkside
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		link(rel="stylesheet" href="slick/slick.css")
+		link(rel="stylesheet" href="slick/slick-theme.css")
+		link(href="css/main.css" rel="stylesheet")
+		script(defer src="js/jquery-3.2.1.min.js")
+		script(defer src="slick/slick.js")
+		script(defer src="js/slick-setting.js")
+	body.page
+		//header line
+		header.header
+			.h-top_bar.line
+				.row.h-top_bar-inner.clearfix
+					.h-address 
+						| Tel: 
+						a.h-contact(href="callto:xxxxx xxxxxxxxxx") xxxxx xxxxxxxxxx
+						| | Mail: 
+						a.h-contact(href="mailto:info@domain.com") info@domain.com
+						
+					form.h-search(name='search' action='#' method='get')
+					
+						input.h-search_input.form_style(type='text' name='h-search_input' placeholder='SEARCH TERM HERE')
+						
+						button.h-search_button.form_style(type='submit') SEARCH
+			.h-banner
+				.h-banner-logo_inner.row
+					h1.h-logo T#[span.upper he] D#[span.upper arkside]
+					h2.h-logo_text Free PSD Website Template
+			.h-menu.line
+				.h-menu_inner.row
+					ul.h-nav_menu
+						//--------
+						- var nav_button = ["HOMEPAGE", "STYLE DEMO", "FULL WIDTH", "DROPDOWN", "GALLERY", "PORTFOLIO", "LINK TEXT", "LONG LINK TEXT"];
+						for name_button in nav_button
+							//--------
+							li.h-nav_item
+								a.h-nav_link(href="#")=name_button
+		//slider line
+		.slider
+			.row.slider_inner
+				.single-slide
+					.slider_image
+						img.slider_img(alt="Слайд" src="images/Rectangle.png")
+						.slider_text
+							h3.slider-title.
+								Slide 1 Caption
+							p.slider-desc.
+								Dapiensociis temper donec auctortortis cumsan et curabitur condis lorem loborttis leo.
+							p.slider-desc.
+								Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem pellus sed.
+					.slider_image
+						img.slider_img(alt="Слайд" src="images/Rectangle-r.png")
+						.slider_text
+							h3.slider-title.
+								Slide 2 Caption
+							p.slider-desc.
+								Dapiensociis temper donec auctortortis cumsan et curabitur condis lorem loborttis leo.
+							p.slider-desc.
+								Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem pellus sed.
+					.slider_image
+						img.slider_img(alt="Слайд" src="images/Rectangle-y.png")
+						.slider_text
+							h3.slider-title.
+								Slide 3 Caption
+							p.slider-desc.
+								Dapiensociis temper donec auctortortis cumsan et curabitur condis lorem loborttis leo.
+							p.slider-desc.
+								Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem pellus sed.
+				//.slider_nav-box
+					.slider_nav.s-nav_left
+					.slider_nav.s-nav_right
+		//content line
+		.content
+			.row.content_inner.clearfix
+				.block_text
+					p.block_text-title Lorum ipsum dolor
+					p.block_text-content.
+						Justoid nonummy laoreet phasellen penatoque in antesque pellus elis eget tincidunt. 
+						Inteligula congue id elis donec sce sagittis intes.
+						
+				figure.content_image
+					img.content_img(alt="Контент" src="images/Rectangle1.png")
+					figcaption.content_img-desc
+						p.content_img-desc_text Cursuspe natis accum ut cura bitur nulla tellus tor ames.
+						a.content_img-desc_link(href="#") View This Project »
+						
+				figure.content_image
+					img.content_img(alt="Контент" src="images/Rectangle1.png")
+					figcaption.content_img-desc
+						p.content_img-desc_text Cursuspe natis accum ut cura bitur nulla tellus tor ames.
+						a.content_img-desc_link(href="#") View This Project »
+						
+				figure.content_image
+					img.content_img(alt="Контент" src="images/Rectangle1.png")
+					figcaption.content_img-desc
+						p.content_img-desc_text Cursuspe natis accum ut cura bitur nulla tellus tor ames.
+						a.content_img-desc_link(href="#") View This Project »
+		//footer line
+		footer.footer.line
+			.row.footer-inner
+				.footer-box.clearfix
+					//quick links
+					.block_text.f-block_text
+						p.block_text-title.f-title Quick Links
+						ul.block_text-content
+							//--------
+							- var qlinks = ["» Homepage", "» Contact Us", "» Sitemap", "» Privacy Policy", "» Terms of Use", "» Copyright Information", "» Website Matters"];
+							for name_link in qlinks
+								//--------
+								li.f-qlinks_item
+									a.f-link(href="#")=name_link
+					//address
+					.block_text.f-block_text
+						p.block_text-title.f-title How To Find Us
+						ul.block_text-content
+							li.f-address_item Address Line 1
+							li.f-address_item Address Line 2
+							li.f-address_item Town/City
+							li.f-address_item Postcode/Zip
+							li.f-address_item &nbsp;
+							li.f-address_item Tel: 
+								a.f-link(href="callto:xxxxx xxxxxxxxxx") xxxxx xxxxxxxxxx
+							li.f-address_item Email: 
+								a.f-link(href="mailto:contact@domain.com") contact@domain.com
+							
+					//social	
+					.f-social_box
+						p.block_text-title.f-title Connect With Us
+						.f-social-icons_box
+							a.f-social-icons.icon-linkedin(href="#")
+							a.f-social-icons.icon-twitter(href="#")
+							a.f-social-icons.icon-pinterest(href="#")
+							a.f-social-icons.icon-google(href="#")
+							a.f-social-icons.icon-rss(href="#")
+						p.block_text-title.f-title Subscribe To Our Newsletter
+						form.f-social_contact(name='f-social_contact' action='#' method='get')
+						
+								input.h-contact_input.form_style(type='text' name='h-contact_input' placeholder='Enter Your Email Here')
+								
+								button.h-contact_button.form_style(type='submit') SIGN UP
+				//copyright
+				.f-copyright_box.clearfix
+					.f-copyright_left.
+						Copyright &copy; 2013 - All Rights Reserved - Domain Name
+					.f-copyright_right.
+						Template by OS Templates

@@ -1,0 +1,18 @@
+/* PAGE */
+.b-page { 
+	font: 13px $main-font-family;
+	line-height: 1.714;
+	color: $main-text_color;
+	background: $page-background_color;
+}
+
+.b-container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.b-content {
+	
+	padding: 0 2.05128205128%; /* 24px/1170*100 */
+}
+

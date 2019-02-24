@@ -1,0 +1,47 @@
+/* color back */
+$primary-dark: #000000;
+$primary-mid: #232323;
+$primary-light: #3F3F3F;
+$primary-trans: rgba(15,15,15,.5);
+
+/* color text */
+$second-dark: #666666;
+$second-mid: #989898;
+$second-light: #FFFFFF;
+
+$advanced-dark: #858585;
+$advanced-light: #c0c0c0;
+$advanced-bright: #33d7ff;
+
+/* font */
+$main-font_family: Georgia, "Times New Roman", Times, serif;
+$second-font_family: Verdana, Arial, Helvetica, sans-serif;
+$advanced-font_family: Arial, Helvetica, sans-serif;
+
+/* back */
+$page-background_color: $primary-dark;
+$line-background_color: $primary-mid;
+$border_color: $primary-light;
+$input_color: $primary-light;
+$slider-back_color: $primary-trans;
+
+/* text */
+$main-text_color: $second-mid;
+$title-text_color: $second-dark;
+$banner_link_color: $second-light;
+$banner-text_color: $advanced-dark;
+$input-text_color: $advanced-light;
+$button-text_color: $advanced-bright;
+$slider-text_color: $advanced-light;
+
+/* */
+@mixin border-rad($px) {
+	-webkit-border-radius: ($px);
+	-moz-border-radius: ($px);
+	border-radius: ($px);
+}
+
+@mixin border($px) {
+	border: ($px) solid $page-background_color;
+	outline: 1px solid $border_color;
+}

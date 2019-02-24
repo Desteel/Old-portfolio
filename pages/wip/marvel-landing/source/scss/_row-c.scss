@@ -1,0 +1,46 @@
+/*  ROW C  */
+.b-row-c {
+	background-color: rgb(57,58,57);
+	background: url(../images/b-row-c/background.png) no-repeat;
+    background-size: cover;
+}
+
+.b-row-c__inner {
+	color: $page-background_color;
+	text-align: center;
+	
+	padding-top: 14%;
+	padding-bottom: 11%;
+}
+
+
+/* logo box */
+.b-row-c__logo-box {
+    margin-bottom: 5%;
+}
+
+
+/* title box */
+.b-row-c__title-box {
+    margin-bottom: 2.5%;
+}
+
+.b-title_row-c {
+    font-size: 44px;	
+}
+
+
+/* text box */
+.b-row-c__text-box {
+	display: inline-block;
+	padding: 0 17%;
+	margin-bottom: 6%;
+}
+
+
+/* button box */
+.b-button_row-c {
+	border-color: $page-background_color;
+	font-size: 18px;
+	margin: 1px 1%;
+}

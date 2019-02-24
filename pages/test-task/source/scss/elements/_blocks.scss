@@ -1,0 +1,16 @@
+/* block_center */
+.b-flex-center {
+	@include display-flex;
+	@include align-items(center);
+    @include justify-content(center);
+	
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+}
+
+/* text transform */
+.b-uppercase {
+	text-transform: uppercase;
+}
+

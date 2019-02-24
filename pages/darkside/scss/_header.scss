@@ -1,0 +1,82 @@
+/* top panel */
+.h-address {
+	float: left;
+	color: $title-text_color;
+	margin: 22px 0 22px 0;
+	font: 13px $second-font_family;
+}
+.h-contact {
+	color: $title-text_color;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.h-search {
+	float: right;
+	margin: 18px 0 0 0;
+}
+.h-search_input {
+	height: 24px;
+	padding-left: 7px;
+	width: 173px;
+	margin-right: 9px;
+}
+.h-search_button {
+	color: $button-text_color;
+	height: 26px;
+	padding: 0 10px 0 10px;
+	cursor: pointer;
+}
+
+/* banner */
+.h-banner-logo_inner {
+	text-align: center;
+	padding: 40px 0 25px 0;
+	line-height: 1;
+}
+.h-logo {
+	font: 48px $advanced-font_family;
+	text-transform: uppercase;
+	color: $banner_link_color;
+}
+.upper {
+	font-size: 43px;
+}
+.h-logo_text {
+	font-size: 16px;
+	color: $banner-text_color;
+}
+
+/* menu */
+.h-menu {
+	border-top: 1px solid $border_color;
+	border-bottom: 1px solid $border_color;
+}
+.h-menu_inner {
+	padding: 19px 0 19px 0;
+}
+
+.h-nav_menu {
+	text-align: center;
+}
+
+.h-nav_item {
+    display: inline-block;
+    padding: 0 15px 0 15px;
+}
+
+.h-nav_link {
+	color: $banner_link_color;
+	&:hover {
+		color: $button-text_color;
+	}
+}
+
+
+
+
+
+
+
+

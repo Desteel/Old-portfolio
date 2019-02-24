@@ -1,0 +1,39 @@
+/* sidebar */
+
+.b-news__text-box {	
+	background-color: $slider-background_color;
+}
+
+.b-text-wrap {
+    padding: 30px 24px 24px;
+}
+
+.b-text-content__item {
+	padding-right: 20px;
+	width: 250px;
+	display: inline-block; /* old */
+}
+
+.b-text-content__title {
+	font-weight: bold;	
+}
+
+.b-text-content__subtitle {
+	font-family: $sub-font_family;
+	font-style: italic;
+	color: $third-text_color;
+}
+
+.b-text-content__section {
+    padding: 10px 0;
+}
+
+.b-news-button {
+	display: inline-block;
+	padding: 15px 12px;	
+	color: $main-text_color;
+	line-height: 0;
+	font-size: 11px;	
+}
+
+

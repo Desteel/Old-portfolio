@@ -1,0 +1,68 @@
+/* button */
+.b-button {
+	display: inline-block;	
+	width: 230px;
+	padding: 0 10px;
+	
+	text-align: center;	
+	font: 18px $second-font-family;
+	line-height: 2.3;	
+	
+	border: none;
+    outline: none;
+	cursor: pointer;		
+}
+
+.b-button-style_form {	
+	color: $light-text_color;	
+	background-color: rgb(255,125,0);	
+	
+	@include transition(all .1s);
+	
+	&:active{
+		@include box-shadow(inset 0px 0px 4.75px 0.25px rgba(0, 0, 0, 0.5));
+	}
+}
+
+/* button triangle */
+.b-button_triangle {
+	position: relative;
+	
+	&:before{
+		@include pseudo;
+		border-top: 41px solid rgb(255,186,0);
+		border-left: 230px solid rgb(255,155,0);
+		left: 0;
+		top: 0;
+		box-shadow: inset 0px 0px 4.75px 0.25px rgba(0, 0, 0, 1);
+		@include transition(all .3s);
+	}	
+	
+	&:hover:before{
+		transition: all 0.3s;
+		border-top: 41px solid rgb(255,155,0);
+		border-left: 230px solid rgb(255,186,0);
+	}
+	
+	&:active:before{
+		border-top: 41px solid transparent;
+		border-left: 230px solid transparent;
+	}	
+}
+
+.b-button__text {
+    z-index: 1;
+    position: inherit;
+}
+
+
+/* close form button */
+.b-close-button {
+    cursor: pointer;
+	@include transition(all .3s);
+	fill: rgb(35, 31, 32);
+	
+	&:hover {
+		fill: rgb(0,0,0);
+	}
+}

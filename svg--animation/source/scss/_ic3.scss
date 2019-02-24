@@ -1,0 +1,59 @@
+/* ic3 */
+@mixin key($a-name, $px1, $px2) {
+	@keyframes #{$a-name} {
+		from {
+			@include transform(translateY($px1));
+		}
+		to {
+			@include transform(translateY($px2));
+		}
+	}
+};
+
+/* --- */
+
+.i-bag-svg__page-1 {
+    @include animation-name(key-slide-up_1);
+	@include animation-duration(3.5s);
+}
+
+.i-bag-svg__page-2 {
+    @include animation-name(key-slide-up_2);
+	@include animation-duration(3s);
+}
+
+.i-bag-svg__page-3 {
+    @include animation-name(key-slide-up_3);
+	@include animation-duration(3s);
+}
+
+.i-bag-svg__mark {
+	opacity: 0;
+	@include animation-name(key-fade);
+	@include animation-duration(1s);
+	@include animation-delay(1.5s);
+	@include animation-fill-mode(forwards);
+}
+
+@include keyframes(key-fade) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@include key(key-slide-up_1, -25px, 0px);
+
+@include key(key-slide-up_2, -17px, 0px);
+
+@include key(key-slide-up_3, -33px, 0px);
+
+
+
+
+
+
+

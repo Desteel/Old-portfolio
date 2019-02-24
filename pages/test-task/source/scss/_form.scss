@@ -1,0 +1,53 @@
+/* input */
+.b-form__text-box {
+    margin-bottom: 18px;
+}
+
+.b-form__num-box {
+	margin-bottom: 30px;
+}
+
+.b-form__input {
+	border: none;
+	outline: none;
+	
+	text-align: center;
+	width: 370px;
+	height: 40px;
+	padding: 0 5px;
+	
+	@include box-shadow(0px 0px 4.75px 0.25px rgba(0, 0, 0, 0.2));
+	
+	&:focus{
+		@include box-shadow(0px 0px 4.75px 0.25px rgba(0, 0, 0, 0.5));
+	}
+}
+
+.b-form__input_text {
+    font-size: 20px;
+}
+
+.b-form__input_num {
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+/* placeholder */
+.b-form__input_num::-webkit-input-placeholder { letter-spacing: 2px; }
+.b-form__input_num:-moz-placeholder { letter-spacing: 2px; } /* FF 4-18 */
+.b-form__input_num::-moz-placeholder { letter-spacing: 2px; } /* FF 19+ */
+.b-form__input_num:-ms-input-placeholder { letter-spacing: 2px; } /* IE 10+ */
+
+
+.b-form__input:focus::-webkit-input-placeholder { color:transparent; }
+.b-form__input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.b-form__input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.b-form__input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+/* close button box */
+.b-contact-block__close-button-box {
+	position: absolute;
+	right: 18px;
+    top: 18px;
+}

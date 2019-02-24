@@ -1,0 +1,33 @@
+/* content */
+.block_text {
+	max-width: 225px;
+	float: left;
+}
+
+.block_text-title {
+	font-size: 20px;
+	color: $title-text_color;
+	line-height: 1;
+	margin-bottom: 17px
+}
+
+.content_image{
+	max-width: 225px;
+	float: left;
+	margin-left: 20px;
+}
+
+.content_img {
+	@include border(4px);
+}
+
+.content_img-desc_text{
+	margin-bottom: 10px;
+}
+
+.content_img-desc_link {
+	color: $button-text_color;
+	&:hover{
+		text-decoration: underline;
+	}
+}    

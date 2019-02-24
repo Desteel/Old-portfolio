@@ -1,0 +1,28 @@
+/* NAV */
+.b-nav__inner {
+	align-items: center;
+}
+
+.b-nav {
+	background-color: rgb(42, 42, 42);
+}
+    
+.b-logo__link {
+	line-height: 6;
+}
+
+.b-menu__item {
+	display: inline-block;
+	padding: 0 32px;
+}
+
+.b-menu__link {
+	font: 14px $second-font-family;
+	color: rgb(234,234,234);
+	
+	transition: all 0.3s;
+	
+	&:hover{
+		color: rgb(255, 228, 0);
+	}
+}

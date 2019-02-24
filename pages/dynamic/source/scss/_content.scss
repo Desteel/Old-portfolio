@@ -1,0 +1,57 @@
+/* content */
+.b-menu__button {
+	outline: none; 
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	
+	&:hover {
+		color: $selected-text_color;
+	}
+}
+
+/* img block */
+.b-images-inner {
+	position: relative;
+	display: inline-block;
+	margin: 0px 1px 1px 0px;
+	background: rgb(0, 0, 0);	
+}
+
+.b-content-info {
+	position: absolute;
+	left: 12%;
+    right: 12%;
+    top: 37%;
+    bottom: 37%;	
+	display: none;
+}
+    
+.b-content-info__link {
+	display: block;
+	text-align: center;
+	font: 12px $second-font_family;
+	color: $dark-text_color;
+	padding: 12px 0;	
+	
+	background-color: #ffde00;
+	@include box-shadow(0 2px 2px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.75));
+	@include background-image(linear-gradient(bottom, rgba(0,0,0,.19), rgba(255,255,255,.19)));	
+}
+
+/* filter */
+.js-mix-target {
+	display: none;
+}
+
+.js-mix-filter_active {
+	color: $selected-text_color;
+}
+	
+	
+	
+	
+	
+	
+	

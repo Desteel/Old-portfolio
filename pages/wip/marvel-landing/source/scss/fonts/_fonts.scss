@@ -1,0 +1,36 @@
+//font
+@include font-face("Montserrat-Regular", font-files(
+	"Montserrat-Regular.ttf" 
+));
+
+@include font-face("Montserrat-Light", font-files(
+	"Montserrat-Light.ttf" 
+));
+
+@include font-face("Montserrat-Bold", font-files(
+	"Montserrat-Bold.ttf" 
+));
+
+@include font-face("Montserrat-Black", font-files(
+	"Montserrat-Black.ttf" 
+));
+
+
+
+@include font-face("Lato-Regular", font-files(
+	"Lato-Regular.ttf" 
+));
+
+
+
+@include font-face("Muli-Black", font-files(
+	"Muli-Black.ttf" 
+));
+
+@include font-face("Muli-Bold", font-files(
+	"Muli-Bold.ttf" 
+));
+
+@include font-face("Muli-Regular", font-files(
+	"Muli-Regular.ttf" 
+));

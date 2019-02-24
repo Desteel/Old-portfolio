@@ -1,0 +1,11 @@
+.b-slider.b-shadow
+	.b-slider__inner.js-slider-fast
+		//-------
+		mixin slider_img(imageColumn, imageName)
+			.b-slider-content
+				img.b-slider-img(alt="Слайд "+imageColumn+"" src="images/b-slider/"+imageName+".png")
+		//-------
+		- var x = 4;
+		- for (var i=1; i<=x; i++){
+			+slider_img([i], "slider-img_1")
+		- }

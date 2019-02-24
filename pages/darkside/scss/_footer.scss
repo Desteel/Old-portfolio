@@ -1,0 +1,101 @@
+/* footer */
+.footer {
+	margin-top: 40px;
+	border-top: 5px solid $border_color;
+}
+
+.footer-inner {
+	padding-top: 20px;
+}
+
+.f-block_text {
+	padding: 10px 0 10px 0;
+	margin-right: 100px;
+}
+
+.f-title {
+	font-size: 16px;
+}
+
+.f-link {
+	color: $main-text_color;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.f-social_box {
+	float: right;
+	padding: 10px 0 10px 35px;
+	border-left: 1px solid $border_color;
+}
+
+.f-social-icons_box {
+	margin-bottom: 22px;
+}
+
+.f-social-icons {
+	margin-left: 7px;
+	display: inline-block;
+	background: -159px -7px url(../images/sprites.png) no-repeat;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+    line-height: 3;
+	&:before{
+		content: "";
+		background: url(../images/sprites.png) no-repeat;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+	}
+}
+.icon-linkedin{
+	&:before{
+		background-position: -128px 0;
+	}
+}.icon-twitter{
+	&:before{
+		background-position: -57px -28px;
+	}
+}.icon-pinterest{
+	&:before{
+		background-position: -76px -28px;
+	}
+}.icon-google{
+	&:before{
+		background-position: -105px -3px;
+	}
+}.icon-rss{
+	&:before{
+		background-position: -105px -29px;
+	}
+}
+
+.h-contact_input {
+	padding-left: 12px;
+	width: 233px;
+	height: 30px;
+	margin-right: 12px;
+}
+
+.h-contact_button {
+	color: $button-text_color;
+	padding: 0 20px 0 20px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.f-copyright_box {
+	border-top: 2px solid $border_color;
+	margin-top: 6px;
+	padding: 18px 0 18px 0;
+}
+
+.f-copyright_left{
+	float: left;
+}
+
+.f-copyright_right{
+	float: right;
+}

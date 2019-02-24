@@ -1,0 +1,16 @@
+/* adaptive */
+
+$general-rules: max-width 940px; 
+$second-rules: max-width 830px; 
+$third-rules:  max-width 704px;    //580
+$fourth-rules: max-width 580px;	//500
+$fifth-rules: max-width 570px;		//704
+$sixth-rules: max-width 520px;		
+$seventh-rules: max-width 500px;	//570
+
+//index
+/*.b-page__wrapper_adaptive {
+	@include breakpoint($fourth-rules) {
+		
+	}
+}*/

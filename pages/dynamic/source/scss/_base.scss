@@ -1,0 +1,64 @@
+//font
+@include font-face("Homestead", font-files(
+	"Homestead-Regular.ttf" 
+));
+
+@include font-face("CoffeeService", font-files(
+	"CoffeeService.otf" 
+));
+
+$main-font_family: Arial, Helvetica, sans-serif;
+$sub-font_family: Georgia, Times New Roman, Times, serif;
+$second-font_family: Homestead, Arial, Helvetica, sans-serif;
+$advanced-font_family: CoffeeService, Helvetica, sans-serif;
+
+
+//color back 
+$back-color: rgb(230,230,230);
+$line-color: rgb(202, 202, 202);
+$slider-color: rgb(255, 255, 255);
+
+//border
+$main-border: solid 1px rgba(194,194,194,.8);
+
+@mixin block-background {
+	background-color: rgba(247,247,247,.5);
+	@include box-shadow(0 1px 4px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.4));
+	border: $main-border;
+
+}
+
+//color text 
+$logo-text: rgb(105, 105, 105);
+$main-text: rgb(102, 102, 102);
+$second-text: rgb(144, 144, 144);
+$third-text: rgb(153, 153, 153);
+$selected-text: rgb(51, 51, 51);
+$dark-text: rgb(0, 0, 0);
+$light-text: rgb(158, 158, 158);
+
+//back
+$page-background_color: $back-color;
+$line-background_color: $line-color;
+$slider-background_color:$slider-color;
+
+//text
+$logo-text_color:$logo-text;
+$main-text_color: $main-text;
+$second-text_color: $second-text;
+$third-text_color: $third-text;
+$selected-text_color: $selected-text;
+$dark-text_color: $dark-text;
+$footer-text_color: $light-text;
+
+//mixins 
+@mixin border($px) {
+	border: ($px) solid $page-background_color;
+	outline: 1px solid $border_color;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}

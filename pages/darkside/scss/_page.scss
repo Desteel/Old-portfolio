@@ -1,0 +1,41 @@
+.page {
+	font: 13px $main-font_family;
+	background: $page-background_color;
+	color: $main-text_color;
+	line-height: 1.7;
+}
+
+.row {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.line {
+	background: $line-background_color;
+}
+
+/* forms */
+.form_style{
+	@include border-rad(5px);
+	border: none;
+	outline: none;
+	background: $input_color;
+	color: $input-text_color;
+	font: 12px $main-font_family;
+	
+	&:hover {
+		background: #565656;
+	}
+}
+.form_style::-webkit-input-placeholder { /* WebKit browsers */
+   color: $input-text_color;
+}
+.form_style:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $input-text_color;
+}
+.form_style::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $input-text_color;
+}
+.form_style:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: $input-text_color;
+}

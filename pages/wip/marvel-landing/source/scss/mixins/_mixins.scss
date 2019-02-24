@@ -1,0 +1,11 @@
+@mixin border($px) {
+	border: ($px) solid $page-background_color;
+	outline: 1px solid $border_color;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+

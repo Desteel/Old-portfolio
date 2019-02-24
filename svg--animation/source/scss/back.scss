@@ -1,0 +1,208 @@
+
+.rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transform: scale(0.5);
+  }
+
+  @keyframes rotateInUpLeft {
+  0% {
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+
+  }
+  100% {
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: none;
+  transform: none;
+
+  }
+  } 
+
+
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transform-origin: 50% 50%;
+  }
+
+@keyframes zoomIn {
+	0% {
+		@include transform(scale3d(.3, .3, .3));
+	}
+} 
+
+
+.qw {
+	width: 600px;
+	height:700px;
+	background-color: green;
+}
+
+
+.test{
+	width: 300px;
+	height:400px;
+	background-color: red;
+	
+	animation-name: matrix;
+	transform-origin: 50% 50%;
+	animation-duration: 2.5s;
+	
+	margin: 40px;
+}
+
+/*
+@keyframes matrix {
+  0% {
+	transform: matrix(1, 0.3, -0.07, 1, -1, -100);
+  }
+  100% {
+	transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+*/
+
+
+
+.rotateInUpLeft {
+  animation-name: rotateInUpLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transform: scale(0.5);
+}
+
+
+/*animation-name: rotate3d;*/
+
+@keyframes rotate3d {
+  0% {
+	transform: rotate3d(0, 1, 0.7, 90deg);
+
+  }
+  100% {
+	@include transform(none);
+  }
+}
+
+
+
+
+
+
+
+
+/*
+.st0 {
+	fill: blue;
+	stroke: #000000;
+	stroke-width: 2.126;
+	stroke-miterlimit: 22.9256;
+	} 
+	
+.st1 {
+	fill: red;
+	} 
+	
+.st2 {
+	fill: yellow;
+}
+
+.st5 {
+	fill: yellow;
+}
+
+.third {
+	animation-name: left;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+}
+
+.rotateInDownLeft {
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	
+ }
+  
+@keyframes rotate {
+	0% {
+		transform-origin: left bottom;
+		transform: rotate3d(10, 50, 0, -100deg);
+		opacity: 0;
+	}
+	100% {
+		transform-origin: left bottom;
+		transform: none;
+		opacity: 1;
+	}
+} 
+
+@keyframes left {
+	0% {
+		transform-origin: left bottom;
+		transform: translate(10px);
+		opacity: 0;
+	}
+	100% {
+		transform-origin: left bottom;
+		transform: none;
+		opacity: 1;
+	}
+} 
+
+.bounceInDown {
+
+  animation-name: bounceInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  }
+  
+  
+  @keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -3000px, 0);
+  transform: translate3d(0, -3000px, 0);
+  }
+  
+  60% {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 25px, 0);
+  transform: translate3d(0, 25px, 0);
+  }
+  
+  75% {
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  }
+  
+  90% {
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+  }
+  
+  100% {
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+  
+*/
